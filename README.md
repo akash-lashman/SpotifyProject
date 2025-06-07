@@ -1,7 +1,7 @@
 **Objective:**
 Analyze and visualize Spotify track data by integrating platform performance (TikTok, YouTube, Shazam), ranking, and audio features to uncover drivers of popularity using Python, SQL, and Power BI.
 
-❓** Key Questions & Insights**
+**❓Key Questions & Insights**
 
 1. What drives Spotify popularity?
 → High danceability, low acousticness, and strong Shazam/TikTok activity correlate with top performance.
@@ -18,7 +18,7 @@ Analyze and visualize Spotify track data by integrating platform performance (Ti
 5. Are explicit tracks increasing?
 → Yes — especially post-2020, reflecting genre evolution.
 
-🧰 **Tools & Technologies Used**
+🧰**Tools & Technologies Used**
 
 * Python: Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn
 → Data cleaning, EDA, imputation, feature engineering
@@ -29,7 +29,7 @@ Analyze and visualize Spotify track data by integrating platform performance (Ti
 * Power BI:
 → Data modeling, DAX, Power Query (M), slicers, visualizations
 
-📂 **Data Sources**
+📂**Data Sources**
 
 Spotify2024.csv: Platform metrics (streams, playlists, TikTok, YouTube, rankings)
 
@@ -47,7 +47,7 @@ dataset.csv: Audio features (danceability, loudness, valence, metadata)
 
 * Visuals: correlation heatmaps, scatterplots
 
-🛠️** SQL Operations**
+**🛠️SQL Operations**
 
 * Merged datasets using joins + regex logic
 
@@ -55,7 +55,7 @@ dataset.csv: Audio features (danceability, loudness, valence, metadata)
 
 * Handled join mismatches & nulls with fallback methods
 
-📊** Power BI Reporting**
+**📊Power BI Reporting**
 
 * Star schema: final_trackdesc as fact table
 
@@ -75,7 +75,7 @@ Visualize reach across Spotify, YouTube, TikTok, and Shazam. Analyze rankings, c
 Dive into artist traits such as popularity, instrumentalness, and danceability. Filter by type, mood, and mode; examine distributions of acousticness and loudness.
 
 
-✅** Outcomes**
+**✅Outcomes**
 
 Seamless ETL pipeline from raw CSVs to insights
 
@@ -83,7 +83,7 @@ Smart SQL views for faster Power BI filtering
 
 Uncovered key audio and genre-based drivers of engagement
 
-⚠️** Challenges & Solutions**
+**⚠️Challenges & Solutions**
 
 1. Python – Imputing Sparse Social Data:
 Some platform metrics like Shazam or TikTok data were missing for several tracks. To address this, I applied a hybrid imputation strategy — using linear regression when metrics were strongly correlated (e.g., Shazam and Streams), and KNN or mean/mode imputation for the rest.
